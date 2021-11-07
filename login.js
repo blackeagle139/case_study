@@ -99,9 +99,7 @@ const checkToken = (req, res, next) => {
 
  app.get('/about', checkToken, (req, res) => {
 	 
-	 
-	 console.log(req.token);
-	 
+	
 	 if (req.token == "structo"){
 		 res.send('Hello World');
 	 }else{
